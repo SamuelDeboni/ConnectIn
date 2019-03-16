@@ -58,7 +58,7 @@ bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 
-[sub_resource type="StyleBoxFlat" id=9]
+[sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.866667, 0.866667, 0.866667, 1 )
 
 [sub_resource type="StyleBoxFlat" id=8]
@@ -68,7 +68,7 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=9]
 bg_color = Color( 0.956863, 0.956863, 0.956863, 1 )
 border_width_top = 1
 border_width_right = 1
@@ -123,7 +123,7 @@ PopupMenu/icons/unchecked = null
 PopupMenu/styles/hover = null
 PopupMenu/styles/labeled_separator_left = null
 PopupMenu/styles/labeled_separator_right = null
-PopupMenu/styles/panel = SubResource( 9 )
+PopupMenu/styles/panel = SubResource( 7 )
 PopupMenu/styles/panel_disabled = null
 PopupMenu/styles/separator = null
 PopupPanel/styles/panel = SubResource( 8 )
@@ -159,7 +159,7 @@ TextEdit/icons/tab = null
 TextEdit/styles/completion = null
 TextEdit/styles/focus = null
 TextEdit/styles/normal = null
-TextEdit/styles/read_only = SubResource( 7 )
+TextEdit/styles/read_only = SubResource( 9 )
 WindowDialog/colors/title_color = Color( 0, 0, 0, 1 )
 WindowDialog/constants/close_h_ofs = 18
 WindowDialog/constants/close_v_ofs = 18

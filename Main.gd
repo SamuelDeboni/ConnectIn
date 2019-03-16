@@ -69,7 +69,7 @@ func _on_InviteScript_button_down():
 	if influence_points >= invite_script_price:
 		influence_points -= invite_script_price
 		invite_multi *= 1.1
-		invite_script_price *= 1.1
+		invite_script_price *= 1.2
 	$Control/Store/InviteScript.text =  " Invite Macro " + str(invite_script_price) + "IP"
 	$Control/Status/IM_speed.text = " Invite Macro:\n " + str(invite_multi) + "/clik"
 
@@ -79,7 +79,7 @@ func _on_InviteBot_button_down():
 		if invite_bot_multi == 0:
 			invite_bot_multi += 1
 		else:
-			invite_bot_multi *= 1.1
+			invite_bot_multi *= 1.2
 		invite_bot_price *= 1.1
 	$Control/Store/InviteBot.text =  " Auto Invite Bot " + str(invite_bot_price) + "IP"
 	$Control/Status/IB_speed.text = " Invite Bot Speed:\n " + str(invite_bot_multi*0.1) + "/s"
@@ -88,10 +88,13 @@ func _on_AcceptInvite_button_down():
 	if invites >= 1 * accept_multi:
 		invites -= 1 * accept_multi
 		connections += 1 * accept_multi
+	else:
+		connections += invites
+		connections = 0
 
 func _on_AcceptMacro_button_down():
 	if influence_points >= accept_macro_price:
-		accept_multi *= 1.1
+		accept_multi *= 1.2
 		influence_points -= accept_macro_price
 		accept_macro_price *= 1.1
 	$Control/Store/AcceptMacro.text = " Invite Accept Macro " + str(accept_macro_price) + "IP"
@@ -102,8 +105,8 @@ func _on_AcceptBot_button_down():
 		if accept_bot_multi == 0:
 			accept_bot_multi += 1
 		else:
-			accept_multi *= 1.1
+			accept_multi *= 1.2
 		influence_points -= accept_bot_price
 		accept_bot_price *= 1.1
-	$Control/Store/AcceptBot.text = str(int(accept_bot_multi)) + " Accept Invite Bot " + str(accept_bot_price) + "IP"
+	$Control/Store/AcceptBot.text = " Accept Invite Bot " + str(accept_bot_price) + "IP"
 	$Control/Status/AB_speed.text = " Invite Accept Bot speed:\n " + str(accept_bot_multi) + "/s"
