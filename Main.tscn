@@ -6,33 +6,84 @@
 script = ExtResource( 1 )
 
 [node name="Control" type="Control" parent="."]
-margin_right = 1024.0
+margin_left = -4.2959
+margin_right = 1019.7
 margin_bottom = 599.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-margin_left = 412.597
-margin_top = 37.8749
-margin_right = 557.597
-margin_bottom = 77.8749
+margin_left = 424.0
+margin_top = 38.0
+margin_right = 574.0
+margin_bottom = 80.0
 text = "Connections Simulator"
 
 [node name="SendInvite" type="Button" parent="Control"]
-margin_left = 414.3
-margin_top = 282.044
-margin_right = 558.3
-margin_bottom = 320.044
+margin_left = 413.0
+margin_top = 260.0
+margin_right = 565.0
+margin_bottom = 300.0
 text = "Send Invite"
 
+[node name="AcceptInvite" type="Button" parent="Control"]
+margin_left = 384.0
+margin_top = 470.0
+margin_right = 634.0
+margin_bottom = 500.0
+
 [node name="ConnectionsT" type="TextEdit" parent="Control"]
-margin_left = 27.0
-margin_top = 13.0
-margin_right = 279.0
-margin_bottom = 53.0
+margin_left = 34.0
+margin_top = 10.0
+margin_right = 284.0
+margin_bottom = 50.0
+readonly = true
 
 [node name="InfluenceT" type="TextEdit" parent="Control"]
-margin_left = 28.0
-margin_top = 61.0
-margin_right = 280.0
-margin_bottom = 101.0
+margin_left = 34.0
+margin_top = 60.0
+margin_right = 284.0
+margin_bottom = 100.0
+readonly = true
+
+[node name="Invites" type="TextEdit" parent="Control"]
+margin_left = 384.296
+margin_top = 420.0
+margin_right = 634.296
+margin_bottom = 460.0
+readonly = true
+
+[node name="Store" type="Panel" parent="Control"]
+margin_left = 722.0
+margin_top = 10.0
+margin_right = 1014.0
+margin_bottom = 140.0
+
+[node name="InviteScript" type="Button" parent="Control/Store"]
+margin_left = 31.0
+margin_top = 14.0
+margin_right = 262.0
+margin_bottom = 54.0
+text = "Invite Script"
+
+[node name="InviteBot" type="Button" parent="Control/Store"]
+margin_left = 32.0
+margin_top = 64.0
+margin_right = 262.0
+margin_bottom = 104.0
+text = "Auto Invite Bot"
+
+[node name="Actions" type="Panel" parent="Control"]
+margin_left = 34.0
+margin_top = 226.0
+margin_right = 284.0
+margin_bottom = 520.0
+
+[node name="Button" type="Button" parent="Control/Actions"]
+margin_left = 30.2959
+margin_top = 16.0
+margin_right = 220.296
+margin_bottom = 64.0
+text = "Go to a Network conference"
 
 [connection signal="button_down" from="Control/SendInvite" to="." method="_on_SendInvite_button_down"]
+[connection signal="button_down" from="Control/Store/InviteScript" to="." method="_on_InviteScript_button_down"]
+[connection signal="button_down" from="Control/Store/InviteBot" to="." method="_on_InviteBot_button_down"]
