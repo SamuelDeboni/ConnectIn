@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=8 format=2]
+[gd_resource type="Theme" load_steps=12 format=2]
+
+[ext_resource path="res://Font.tres" type="DynamicFont" id=1]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 1, 1, 1 )
@@ -56,6 +58,16 @@ bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.866667, 0.866667, 0.866667, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.823529, 0.823529, 0.823529, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.956863, 0.956863, 0.956863, 1 )
 border_width_top = 1
@@ -71,6 +83,14 @@ shadow_color = Color( 0.513726, 0.498039, 0.498039, 0.6 )
 shadow_size = 1
 anti_aliasing = false
 
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_size = 4
+
 [resource]
 Button/colors/font_color = Color( 0.164706, 0.156863, 0.945098, 1 )
 Button/colors/font_color_disabled = Color( 0.164706, 0.156863, 0.945098, 0 )
@@ -83,9 +103,30 @@ Button/styles/focus = null
 Button/styles/hover = SubResource( 1 )
 Button/styles/normal = SubResource( 2 )
 Button/styles/pressed = SubResource( 3 )
+Dialogs/constants/button_margin = 40
+Dialogs/constants/margin = 10
 Panel/styles/panel = SubResource( 4 )
 Panel/styles/panelf = SubResource( 5 )
 Panel/styles/panelnc = SubResource( 6 )
+PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_accel = Color( 0.7, 0.7, 0.7, 0.8 )
+PopupMenu/colors/font_color_disabled = Color( 0.4, 0.4, 0.4, 0.8 )
+PopupMenu/colors/font_color_hover = Color( 0, 0, 0, 1 )
+PopupMenu/constants/hseparation = 4
+PopupMenu/constants/vseparation = 4
+PopupMenu/fonts/font = null
+PopupMenu/icons/checked = null
+PopupMenu/icons/radio_checked = null
+PopupMenu/icons/radio_unchecked = null
+PopupMenu/icons/submenu = null
+PopupMenu/icons/unchecked = null
+PopupMenu/styles/hover = null
+PopupMenu/styles/labeled_separator_left = null
+PopupMenu/styles/labeled_separator_right = null
+PopupMenu/styles/panel = SubResource( 9 )
+PopupMenu/styles/panel_disabled = null
+PopupMenu/styles/separator = null
+PopupPanel/styles/panel = SubResource( 8 )
 TextEdit/colors/background_color = Color( 1, 1, 1, 0 )
 TextEdit/colors/brace_mismatch_color = Color( 1, 0.2, 0.2, 1 )
 TextEdit/colors/breakpoint_color = Color( 0.8, 0.8, 0.4, 0.2 )
@@ -119,4 +160,13 @@ TextEdit/styles/completion = null
 TextEdit/styles/focus = null
 TextEdit/styles/normal = null
 TextEdit/styles/read_only = SubResource( 7 )
+WindowDialog/colors/title_color = Color( 0, 0, 0, 1 )
+WindowDialog/constants/close_h_ofs = 18
+WindowDialog/constants/close_v_ofs = 18
+WindowDialog/constants/scaleborder_size = 4
+WindowDialog/constants/title_height = 20
+WindowDialog/fonts/title_font = ExtResource( 1 )
+WindowDialog/icons/close = null
+WindowDialog/icons/close_highlight = null
+WindowDialog/styles/panel = SubResource( 10 )
 
