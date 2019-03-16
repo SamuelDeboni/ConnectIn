@@ -7,6 +7,7 @@ var influence_points = 0.0
 
 var invite_multi = 1
 var invite_bot_multi = 0
+var accept_mult = 1
 
 var invites = 0.0
 
@@ -49,3 +50,9 @@ func _on_InviteBot_button_down():
 		invite_bot_multi += 1
 		invite_bot_price += 5
 	$Control/Store/InviteBot.text = str(invite_bot_multi) + " Auto Invite Bot " + str(invite_bot_price) + "IP"
+
+
+func _on_AcceptInvite_button_down():
+	if invites >= 1 * accept_mult:
+		invites -= 1 * accept_mult
+		connections += 1 * accept_mult
