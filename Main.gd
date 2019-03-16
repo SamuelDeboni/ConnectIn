@@ -35,7 +35,7 @@ func _process(delta):
 	connections += invite_bot_multi * delta * 0.1
 	invites += connections * delta * 0.005
 
-	if t > 1:
+	if t > 1 and invites > accept_bot_multi:
 		invites -= accept_bot_multi
 		connections += accept_bot_multi
 		print(t)

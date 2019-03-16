@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=8 format=2]
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 1, 1, 1 )
 border_width_left = 2
 border_width_top = 2
@@ -15,7 +15,7 @@ shadow_color = Color( 0.341176, 0.341176, 0.341176, 0.6 )
 shadow_size = 4
 anti_aliasing = false
 
-[sub_resource type="StyleBoxFlat" id=1]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 border_width_left = 3
 border_width_top = 3
@@ -56,7 +56,7 @@ bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0.933333, 0.933333, 0.933333, 1 )
 
-[sub_resource type="StyleBoxFlat" id=8]
+[sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.956863, 0.956863, 0.956863, 1 )
 border_width_top = 1
 border_width_right = 1
@@ -80,8 +80,8 @@ Button/constants/hseparation = 2
 Button/fonts/font = null
 Button/styles/disabled = null
 Button/styles/focus = null
-Button/styles/hover = SubResource( 2 )
-Button/styles/normal = SubResource( 1 )
+Button/styles/hover = SubResource( 1 )
+Button/styles/normal = SubResource( 2 )
 Button/styles/pressed = SubResource( 3 )
 Panel/styles/panel = SubResource( 4 )
 Panel/styles/panelf = SubResource( 5 )
@@ -118,5 +118,5 @@ TextEdit/icons/tab = null
 TextEdit/styles/completion = null
 TextEdit/styles/focus = null
 TextEdit/styles/normal = null
-TextEdit/styles/read_only = SubResource( 8 )
+TextEdit/styles/read_only = SubResource( 7 )
 
