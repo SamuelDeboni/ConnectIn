@@ -55,7 +55,7 @@ readonly = true
 margin_left = 722.0
 margin_top = 10.0
 margin_right = 1014.0
-margin_bottom = 140.0
+margin_bottom = 310.0
 
 [node name="InviteScript" type="Button" parent="Control/Store"]
 margin_left = 31.0
@@ -70,6 +70,20 @@ margin_top = 64.0
 margin_right = 262.0
 margin_bottom = 104.0
 text = "Auto Invite Bot"
+
+[node name="AcceptMacro" type="Button" parent="Control/Store"]
+margin_left = 32.0
+margin_top = 130.0
+margin_right = 262.0
+margin_bottom = 170.0
+text = "Invite Accept Macro"
+
+[node name="AcceptBot" type="Button" parent="Control/Store"]
+margin_left = 32.0
+margin_top = 178.0
+margin_right = 262.0
+margin_bottom = 218.0
+text = "Invite Accept Bot"
 
 [node name="Actions" type="Panel" parent="Control"]
 margin_left = 34.0
@@ -88,3 +102,5 @@ text = "Go to a Network conference"
 [connection signal="button_down" from="Control/AcceptInvite" to="." method="_on_AcceptInvite_button_down"]
 [connection signal="button_down" from="Control/Store/InviteScript" to="." method="_on_InviteScript_button_down"]
 [connection signal="button_down" from="Control/Store/InviteBot" to="." method="_on_InviteBot_button_down"]
+[connection signal="button_down" from="Control/Store/AcceptMacro" to="." method="_on_AcceptMacro_button_down"]
+[connection signal="button_down" from="Control/Store/AcceptBot" to="." method="_on_AcceptBot_button_down"]
