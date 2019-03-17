@@ -19,6 +19,10 @@ config/name="Steamy-GameJam"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/aspect="keep_width"
+
 [input]
 
 Jump={

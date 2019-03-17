@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Background.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Font.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Dialog.gd" type="Script" id=5]
 [ext_resource path="res://Sprites/Title.png" type="Texture" id=6]
+[ext_resource path="res://Click.wav" type="AudioStream" id=7]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
@@ -169,6 +170,10 @@ readonly = true
 [node name="Title" type="Sprite" parent="."]
 position = Vector2( 150, 40 )
 texture = ExtResource( 6 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -13.24
 
 [connection signal="button_down" from="Control/SendInvite" to="." method="_on_SendInvite_button_down"]
 [connection signal="button_down" from="Control/AcceptInvite" to="." method="_on_AcceptInvite_button_down"]
